@@ -13,21 +13,18 @@ function Gallery() {
 
   return (
     <div className="Gallery">
-      <header className="Gallery-header"></header>
-      <body>
-        <div className="lista">
-          {personajes &&
-            personajes.map((personaje) => (
-              <Card
-                key={personaje.id}
-                name={personaje.name}
-                gender={personaje.gender}
-                img={personaje.image}
-                status={personaje.status}
-              />
-            ))}
-        </div>
-      </body>
+      <div className="lista">
+        {personajes &&
+          personajes.map((personaje) => (
+            <Card
+              key={personaje.id}
+              name={personaje.name}
+              gender={personaje.gender}
+              img={personaje.image}
+              status={personaje.status}
+            />
+          ))}
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({ key, name, img, gender, status }) => {
+const Card = ({ name, img, gender, status }) => {
   return (
     <>
       <div className="card">
@@ -10,7 +10,12 @@ const Card = ({ key, name, img, gender, status }) => {
           <h5>{name}</h5>
           <p>Gender: {gender}</p>
           <p>Status: {status}</p>
-          <btn class="btn btn-primary">Go somewhere</btn>
+          <a
+            href="https://github.com/Geisson19/rickandmorty/tree/master/src"
+            className="btn btn-primary"
+          >
+            Go somewhere
+          </a>
         </div>
       </div>
     </>
